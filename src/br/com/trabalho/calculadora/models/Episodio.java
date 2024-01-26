@@ -1,6 +1,6 @@
-package models;
+package br.com.trabalho.calculadora.models;
 
-import br.com.trabalho.calculadora.Calculadora.Classificavel;
+import br.com.trabalho.calculadora.calculadora.Classificavel;
 
 public class Episodio implements Classificavel {
 

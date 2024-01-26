@@ -1,4 +1,4 @@
-package br.com.trabalho.calculadora.Calculadora;
+package br.com.trabalho.calculadora.calculadora;
 
 public interface Classificavel {
 

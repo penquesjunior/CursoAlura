@@ -1,8 +1,6 @@
-package br.com.trabalho.calculadora;
+package br.com.trabalho.calculadora.calculadora;
 
-import models.Filme;
-import models.Serie;
-import models.Titulo;
+import br.com.trabalho.calculadora.models.Titulo;
 
 public class CalculadoraDeTempo {
 

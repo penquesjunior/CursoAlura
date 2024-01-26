@@ -1,6 +1,4 @@
-package br.com.trabalho.calculadora.Calculadora;
-
-import models.Titulo;
+package br.com.trabalho.calculadora.calculadora;
 
 public class FiltroRecomendacao {
 

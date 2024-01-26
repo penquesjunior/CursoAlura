@@ -1,4 +1,4 @@
-package models;
+package br.com.trabalho.calculadora.models;
 
 public class Serie extends  Titulo{
 
@@ -6,6 +6,10 @@ public class Serie extends  Titulo{
     private boolean ativa;
     private int epPorTemporada;
     private int minutosPorEp;
+
+    public Serie(String nome, int anoDeLancamento) {
+        super(nome, anoDeLancamento);
+    }
 
     public int getTemporadas() {
         return temporadas;
@@ -37,5 +41,10 @@ public class Serie extends  Titulo{
 
     public void setMinutosPorEp(int minutosPorEp) {
         this.minutosPorEp = minutosPorEp;
+    }
+
+    @Override
+    public String toString() {
+        return "Serie: " + this.getNome() + " (" + this.getAnoDeLancamento()+ ")";
     }
 }
