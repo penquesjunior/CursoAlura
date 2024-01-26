@@ -4,9 +4,7 @@ import br.com.trabalho.calculadora.models.Filme;
 import br.com.trabalho.calculadora.models.Serie;
 import br.com.trabalho.calculadora.models.Titulo;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -17,7 +15,7 @@ public class PrincipalComListas {
         Filme outro = new Filme("John Wick", 2014);
         Filme favorito = new Filme("The Matrix", 1999);
 
-        ArrayList<Titulo> lista = new ArrayList<>();
+        List<Titulo> lista = new LinkedList<>();
         lista.add(filme2);
         lista.add(favorito);
         lista.add(serie);
@@ -26,13 +24,13 @@ public class PrincipalComListas {
             System.out.println(titulo.getNome());
         }
 
-        ArrayList<String> buscaPorArtista = new ArrayList<>();
+        List<String> buscaPorArtista = new ArrayList<>();
         buscaPorArtista.add("Adam Sandler");
         buscaPorArtista.add("Paulo");
         buscaPorArtista.add("Jacqueline");
         System.out.println(buscaPorArtista);
 
-        System.out.println("Depois da Ordenação:");
+        System.err.println("Depois da Ordenação:");
         Collections.sort(buscaPorArtista);
         System.out.println(buscaPorArtista);
         System.out.println("List de Titulos Ordenadas");
@@ -41,6 +39,9 @@ public class PrincipalComListas {
         lista.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
         System.out.println("Ordenano por ano: ");
         System.out.println(lista);
+
+
+        //API -KEY http://www.omdbapi.com/?i=tt3896198&apikey=9ace215f
 
     }
 }
