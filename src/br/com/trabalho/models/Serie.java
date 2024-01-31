@@ -1,4 +1,4 @@
-package br.com.trabalho.calculadora.models;
+package br.com.trabalho.models;
 
 public class Serie extends  Titulo{
 

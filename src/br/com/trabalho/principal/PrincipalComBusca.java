@@ -1,8 +1,7 @@
-package br.com.trabalho.calculadora.principal;
+package br.com.trabalho.principal;
 
-import br.com.trabalho.calculadora.models.CapturaFilme;
+import br.com.trabalho.models.CapturaFilme;
 
-import java.io.FileWriter;
 import java.io.IOException;
 
 

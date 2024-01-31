@@ -1,4 +1,4 @@
-package br.com.trabalho.calculadora.models;
+package br.com.trabalho.models;
 
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;

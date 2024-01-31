@@ -1,4 +1,4 @@
-package br.com.trabalho.calculadora.excecao;
+package br.com.trabalho.excecao;
 
 public class ErroDeConversaoDeAnoException extends RuntimeException {
 

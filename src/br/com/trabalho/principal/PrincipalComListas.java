@@ -1,8 +1,8 @@
-package br.com.trabalho.calculadora.principal;
+package br.com.trabalho.principal;
 
-import br.com.trabalho.calculadora.models.Filme;
-import br.com.trabalho.calculadora.models.Serie;
-import br.com.trabalho.calculadora.models.Titulo;
+import br.com.trabalho.models.Filme;
+import br.com.trabalho.models.Serie;
+import br.com.trabalho.models.Titulo;
 
 import java.util.*;
 

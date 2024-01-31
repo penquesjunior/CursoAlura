@@ -1,6 +1,6 @@
-package br.com.trabalho.calculadora.models;
+package br.com.trabalho.models;
 
-import br.com.trabalho.calculadora.calculadora.Classificavel;
+import br.com.trabalho.calculadora.Classificavel;
 
 public class Filme extends Titulo implements Classificavel {
     private String diretor;

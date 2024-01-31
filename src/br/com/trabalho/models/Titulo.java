@@ -1,7 +1,4 @@
-package br.com.trabalho.calculadora.models;
-
-import br.com.trabalho.calculadora.excecao.ErroDeConversaoDeAnoException;
-import com.google.gson.annotations.SerializedName;
+package br.com.trabalho.models;
 
 public class Titulo implements Comparable<Titulo>{
 
