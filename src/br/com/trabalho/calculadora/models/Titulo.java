@@ -21,14 +21,19 @@ public class Titulo implements Comparable<Titulo>{
 
     public Titulo(TituloOmdb meuTituloOmdb) {
         this.nome = meuTituloOmdb.title();
-        if(meuTituloOmdb.year().length()>4) {
-            throw new ErroDeConversaoDeAnoException("Não consegui converter o ano "+
-                    "Porque tem mais de 4 caracteres");
+
+        if (!meuTituloOmdb.year().equalsIgnoreCase("N/A") || meuTituloOmdb.year() != null) {
+            meuTituloOmdb.year().replace(" ","");
+            this.anoDeLancamento = Integer.valueOf(meuTituloOmdb.year());
+        }else{
+            this.anoDeLancamento =0;
         }
-
-        this.anoDeLancamento = Integer.valueOf(meuTituloOmdb.year());
-
-        this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().replace(" min",""));
+        meuTituloOmdb.runtime().replace(" ", "");
+        if (!meuTituloOmdb.runtime().equalsIgnoreCase("N/A")) {
+            this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().replace(" min", ""));
+        } else {
+            this.duracaoEmMinutos = 0;
+        }
     }
 
     public void exibeFichaTecnica(){
